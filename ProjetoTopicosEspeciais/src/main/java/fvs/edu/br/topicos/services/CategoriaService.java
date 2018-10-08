@@ -9,8 +9,8 @@ import fvs.edu.br.topicos.domain.Categoria;
 import fvs.edu.br.topicos.repositories.CategoriaRepository;
 
 @Service
-public class CategoriaServices {
-
+public class CategoriaService {
+	
 	@Autowired
 	private CategoriaRepository repositorio;
 	
@@ -18,8 +18,5 @@ public class CategoriaServices {
 		Optional<Categoria> obj = repositorio.findById(id);
 		
 		return obj.orElse(null);
-		
-		
 	}
-	
 }

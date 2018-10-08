@@ -13,17 +13,14 @@ public class Principal {
 		
 		EntityManager em = emf.createEntityManager();
 		
-	Aluno aluno = em.find(Aluno.class, 1);
-	System.out.println(aluno);
-	
-	//em.getTransaction().begin();
-	//Aluno aluno1 = new Aluno
-	//(null, "Luan","123","123", 6571);
-	//em.persist(aluno1);
-	//em.getTransaction().commit();
-	
-    
-    
+		Aluno aluno = em.find(Aluno.class, 1);
+		System.out.println(aluno);
+		
+		//em.getTransaction().begin();
+		//Aluno aluno1 = new Aluno(null, "Hugo S", "072291163-76", "20162544556", 21334);
+		//em.persist(aluno1);	
+		//em.getTransaction().commit();
+		//System.out.println("Salvo com Sucesso");
 	}
 
 }
